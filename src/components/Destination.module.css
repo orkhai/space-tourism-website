@@ -1,0 +1,30 @@
+.destination {
+  min-height: 100vh;
+  width: 100%;
+  padding: 1.5rem;
+  background: url(../assets/destination/background-destination-mobile.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .destination {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0;
+    background: url(../assets/destination/background-destination-tablet.jpg)
+      no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1200px) {
+  .destination {
+    min-height: 100vh;
+    width: 100%;
+    padding: 2.5rem 0 0 3.4rem;
+    background: url(../assets/destination/background-destination-desktop.jpg)
+      no-repeat center;
+    background-size: cover;
+  }
+}

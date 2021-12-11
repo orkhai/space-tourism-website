@@ -1,0 +1,132 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background: url(../../assets/shared/logo.svg) no-repeat center;
+}
+
+.mobile_menu {
+  height: 1.3rem;
+  width: 1.5rem;
+  z-index: 20;
+  background: url(../../assets//shared/icon-hamburger.svg) no-repeat center;
+}
+
+.mobile_menu_open {
+  height: 1.3rem;
+  width: 1.5rem;
+  z-index: 20;
+  background: url(../../assets/shared/icon-close.svg) no-repeat center;
+}
+
+header nav,
+hr {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 6rem;
+  }
+
+  .logo {
+    height: 3rem;
+    width: 3rem;
+    margin-left: 2.4rem;
+  }
+
+  .mobile_menu,
+  .mobile_menu_open {
+    display: none;
+  }
+
+  header nav {
+    width: 28rem;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    display: flex;
+    align-items: center;
+  }
+
+  header nav ul {
+    width: 100%;
+    padding: 0 1.4rem 0 3rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header nav ul li {
+    font-size: 14px;
+    letter-spacing: 0.17rem;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+
+  header nav ul li:hover {
+    cursor: pointer;
+  }
+
+  header nav ul li:hover::after {
+    content: "";
+    display: block;
+    width: 80%;
+    position: relative;
+    top: 2.3rem;
+    border-bottom: 0.19rem solid hsl(0, 0%, 100%);
+    opacity: 50%;
+  }
+
+  header nav ul li:first-of-type::after {
+    content: "";
+    display: block;
+    width: 80%;
+    position: relative;
+    top: 2.3rem;
+    border-bottom: 0.19rem solid hsl(0, 0%, 100%);
+  }
+
+  header span {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  hr {
+    width: 29rem;
+    height: 0.0625rem;
+    opacity: 25%;
+    position: relative;
+    left: 3.875rem;
+    z-index: 10;
+    display: inline;
+    color: hsl(0, 0%, 100%);
+  }
+
+  header nav {
+    width: 52rem;
+  }
+
+  header nav ul {
+    padding: 0 8.7rem 0 7.6rem;
+  }
+
+  header nav ul li {
+    font-size: 16px;
+  }
+
+  header span {
+    display: inline;
+  }
+}
