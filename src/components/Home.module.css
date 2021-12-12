@@ -54,6 +54,17 @@ main p {
   cursor: pointer;
 }
 
+.explore:hover::after {
+  content: "";
+  display: block;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  transform: scale(1.4);
+  position: absolute;
+}
+
 .explore h3 {
   margin: 0;
   font-size: 20px;
@@ -141,17 +152,5 @@ main p {
     height: 17rem;
     width: 17rem;
     margin: 0;
-  }
-
-  .explore:hover::after {
-    content: "";
-    display: block;
-    width: 18rem;
-    height: 18rem;
-    border-radius: 50%;
-    opacity: 10%;
-    background-color: hsl(0, 0%, 100%);
-    transform: scale(1.4);
-    position: absolute;
   }
 }

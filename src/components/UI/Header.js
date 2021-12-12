@@ -26,8 +26,7 @@ const Header = () => {
 
       {isMenuOpen && <MobileMenu />}
 
-      {/* <div className={classes.line}></div> */}
-      <hr />
+      <div className={classes.line}></div>
 
       <nav>
         <ul>

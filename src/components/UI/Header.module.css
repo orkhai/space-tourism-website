@@ -27,7 +27,7 @@ header {
 }
 
 header nav,
-hr {
+header .line {
   display: none;
 }
 
@@ -74,21 +74,7 @@ hr {
     font-family: "Barlow Condensed", sans-serif;
   }
 
-  header nav ul li:hover {
-    cursor: pointer;
-  }
-
-  header nav ul li:hover::after {
-    content: "";
-    display: block;
-    width: 80%;
-    position: relative;
-    top: 2.3rem;
-    border-bottom: 0.19rem solid hsl(0, 0%, 100%);
-    opacity: 50%;
-  }
-
-  header nav ul li:first-of-type::after {
+  header nav ul li:nth-of-type(2)::after {
     content: "";
     display: block;
     width: 80%;
@@ -103,19 +89,22 @@ hr {
 }
 
 @media (min-width: 1200px) {
-  hr {
+  header .line {
     width: 29rem;
     height: 0.0625rem;
-    opacity: 25%;
     position: relative;
     left: 3.875rem;
     z-index: 10;
     display: inline;
-    color: hsl(0, 0%, 100%);
+    background-color: hsla(0, 0%, 100%, 0.25);
   }
 
   header nav {
     width: 52rem;
+  }
+
+  header span {
+    display: inline;
   }
 
   header nav ul {
@@ -126,7 +115,16 @@ hr {
     font-size: 16px;
   }
 
-  header span {
-    display: inline;
+  header nav ul li:hover {
+    cursor: pointer;
+  }
+
+  header nav ul li:hover::after {
+    content: "";
+    display: block;
+    width: 80%;
+    position: relative;
+    top: 2.3rem;
+    border-bottom: 0.19rem solid hsla(0, 0%, 100%, 0.5);
   }
 }

@@ -7,6 +7,123 @@
   background-size: cover;
 }
 
+main {
+  margin-top: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+main h1 {
+  margin: 0 0.4rem 0 0;
+  letter-spacing: 0.17rem;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+main span {
+  color: hsla(0, 0%, 100%, 0.25);
+  font-weight: bold;
+}
+
+.destination_image {
+  height: 10.6rem;
+  width: 10.6rem;
+  margin: 1.9rem auto 1.6rem;
+  background: url(../assets/destination/image-moon.webp) no-repeat center;
+  background-size: cover;
+}
+
+.destination_choice {
+  width: 15.2rem;
+  margin: auto;
+}
+
+.destination_choice ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.destination_choice ul li {
+  letter-spacing: 0.17rem;
+  font-size: 14px;
+  color: hsl(231, 77%, 90%);
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+.destination_choice ul li:hover {
+  cursor: pointer;
+}
+
+.destination_choice ul li:hover::after {
+  content: "";
+  display: block;
+  width: 80%;
+  position: relative;
+  top: 0.8rem;
+  border-bottom: 0.19rem solid hsla(0, 0%, 100%, 0.5);
+}
+
+.destination_choice ul li:first-of-type {
+  color: hsl(0, 0%, 100%);
+}
+
+.destination_choice ul li:first-of-type::after {
+  content: "";
+  display: block;
+  width: 80%;
+  position: relative;
+  top: 0.8rem;
+  border-bottom: 0.19rem solid hsl(0, 0%, 100%);
+}
+
+main h2 {
+  margin: 1.3rem 0 0;
+  font-size: 56px;
+  font-family: "Bellefair", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+main p {
+  margin: 0 0 2.3rem 0;
+  line-height: 1.6rem;
+  font-size: 15px;
+  font-family: "Barlow", sans-serif;
+}
+
+main .line {
+  height: 0.0625rem;
+  width: 100%;
+  background-color: hsl(231, 15%, 26%);
+}
+
+.distance_time {
+  margin-top: 2rem;
+}
+
+main h3 {
+  margin: 0;
+  color: hsl(231, 77%, 90%);
+  letter-spacing: 0.17rem;
+  font-size: 14px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+main h4 {
+  margin: 1rem 0;
+  font-size: 28px;
+  font-family: "Bellefair", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
 @media (min-width: 768px) {
   .destination {
     min-height: 100vh;
@@ -15,6 +132,50 @@
     background: url(../assets/destination/background-destination-tablet.jpg)
       no-repeat center;
     background-size: cover;
+  }
+
+  main {
+    margin: 0;
+    padding: 2.5rem;
+  }
+
+  main h1 {
+    margin: 0;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .destination_image {
+    height: 18.75rem;
+    width: 18.75rem;
+    margin: 3.6rem auto 3.8rem;
+  }
+
+  .destination_choice {
+    width: 18.3rem;
+    margin: 0;
+  }
+
+  .destination_choice ul li {
+    font-size: 16px;
+  }
+
+  main h2 {
+    margin: 2.1rem 0 0;
+    font-size: 80px;
+  }
+
+  main p {
+    padding: 0 3.6rem;
+    margin: 0 0 3.5rem 0;
+    line-height: 1.75rem;
+    font-size: 16px;
+  }
+
+  .distance_time {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
 
@@ -26,5 +187,48 @@
     background: url(../assets/destination/background-destination-desktop.jpg)
       no-repeat center;
     background-size: cover;
+  }
+
+  main {
+    padding: 6rem 9.5rem 7rem 9.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  main h1 {
+    font-size: 28px;
+  }
+
+  .destination_image {
+    height: 27.8rem;
+    width: 27.8rem;
+    margin: 5.9rem 0 0;
+    background: url(../assets/destination/image-moon.png) no-repeat center;
+  }
+
+  .destination_details {
+    width: 27.8rem;
+    text-align: left;
+  }
+
+  main h2 {
+    margin: 2.4rem 0 0;
+    font-size: 100px;
+  }
+
+  main p {
+    padding: 0;
+    margin: 0 0 3.9rem 0;
+    line-height: 2rem;
+    font-size: 18px;
+  }
+
+  .distance_time {
+    justify-content: flex-start;
+  }
+
+  .distance {
+    margin-right: 4.75rem;
   }
 }
