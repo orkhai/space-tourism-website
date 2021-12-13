@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/multipage-website-built-with-react-and-reactrouter-cJ1N_VEiM](https://www.frontendmentor.io/solutions/multipage-website-built-with-react-and-reactrouter-cJ1N_VEiM)
 - Live Site URL: [https://space-tourism-website-orkhai.vercel.app](https://space-tourism-website-orkhai.vercel.app)
 
 ## My process
