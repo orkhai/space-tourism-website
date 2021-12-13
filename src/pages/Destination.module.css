@@ -1,7 +1,6 @@
 .destination {
   min-height: 100vh;
   width: 100%;
-  padding: 1.5rem;
   background: url(../assets/destination/background-destination-mobile.jpg)
     no-repeat center;
   background-size: cover;
@@ -9,6 +8,7 @@
 
 .destination_main {
   margin-top: 1.5rem;
+  padding: 0 1.5rem 1.5rem;
   color: hsl(0, 0%, 100%);
   text-align: center;
 }
@@ -77,19 +77,6 @@
   color: hsl(231, 77%, 90%);
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
-}
-
-.destination_choice ul li:hover {
-  cursor: pointer;
-}
-
-.destination_choice ul li:hover::after {
-  content: "";
-  display: block;
-  width: 80%;
-  position: relative;
-  top: 0.8rem;
-  border-bottom: 0.19rem solid hsla(0, 0%, 100%, 0.5);
 }
 
 .destination_choice_active {
@@ -273,6 +260,19 @@
   .destination_choice {
     width: 18.3rem;
     margin: 0;
+  }
+
+  .destination_choice ul li:hover {
+    cursor: pointer;
+  }
+
+  .destination_choice ul li:hover::after {
+    content: "";
+    display: block;
+    width: 80%;
+    position: relative;
+    top: 0.8rem;
+    border-bottom: 0.19rem solid hsla(0, 0%, 100%, 0.5);
   }
 
   .destination_details {

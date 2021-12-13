@@ -88,7 +88,6 @@ const Crew = () => {
         <section>
           <div>
             <div className={`${crewImg}`}></div>
-            <div className={classes.crew_line}></div>
           </div>
 
           <div className={classes.info_indicator}>

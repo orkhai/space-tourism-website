@@ -1,7 +1,6 @@
 .technology {
   min-height: 100vh;
   width: 100%;
-  padding: 1.5rem;
   background: url(../assets/technology/background-technology-mobile.jpg)
     no-repeat center;
   background-size: cover;
@@ -13,14 +12,107 @@
   text-align: center;
 }
 
+.technology_main span {
+  color: hsla(0, 0%, 100%, 0.25);
+  font-weight: bold;
+}
+
 .technology_main h1 {
-  margin: 0 2.9rem 0 0;
+  margin: 0 3.7rem 0 0;
   letter-spacing: 0.17rem;
   font-size: 16px;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   text-align: right;
+}
+
+.technology_image_vehicle {
+  height: 10.6rem;
+  width: 100%;
+  margin: 1.9rem 0 2.1rem;
+  background: url(../assets//technology/image-launch-vehicle-landscape.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+
+.technology_image_spaceport {
+  height: 10.6rem;
+  width: 100%;
+  margin: 1.9rem 0 2.1rem;
+  background: url(../assets//technology/image-spaceport-landscape.jpg) no-repeat
+    center;
+  background-size: cover;
+}
+
+.technology_image_capsule {
+  height: 10.6rem;
+  width: 100%;
+  margin: 1.9rem 0 2.1rem;
+  background: url(../assets//technology/image-space-capsule-landscape.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+
+.technology_picker {
+  height: 2.5rem;
+  width: 9.5rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.picker {
+  width: 2.5rem;
+  border-radius: 50%;
+  font-size: 16px;
+  font-family: "Bellefair", sans-serif;
+  border: 0.0625rem solid hsla(0, 0%, 100%, 0.25);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picker_active {
+  width: 2.5rem;
+  border-radius: 50%;
+  font-size: 16px;
+  font-family: "Bellefair", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(230, 35%, 7%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.technology_info {
+  padding: 1.5rem;
+}
+
+.technology_info h2 {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.17rem;
+  color: hsl(231, 77%, 90%);
+  font-weight: normal;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+.technology_info h3 {
+  margin: 0.4rem 0 0.75rem;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Bellefair", sans-serif;
+  text-transform: uppercase;
+}
+
+.technology_info p {
+  margin: 0;
+  line-height: 1.6rem;
+  font-size: 15px;
+  font-family: "Barlow", sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -32,6 +124,52 @@
       no-repeat center;
     background-size: cover;
   }
+
+  .technology_main {
+    margin-top: 2.6rem;
+  }
+
+  .technology_main h1 {
+    margin: 0 0 0 2.4rem;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .technology_image_vehicle,
+  .technology_image_spaceport,
+  .technology_image_capsule {
+    height: 19.4rem;
+    margin: 3.6rem 0;
+  }
+
+  .technology_picker {
+    height: 3.75rem;
+    width: 13.1rem;
+  }
+
+  .picker,
+  .picker_active {
+    width: 3.75rem;
+    font-size: 24px;
+  }
+
+  .technology_info {
+    padding: 2.8rem 9.7rem;
+  }
+
+  .technology_info h2 {
+    font-size: 16px;
+  }
+
+  .technology_info h3 {
+    margin: 0.9rem 0 0.6rem;
+    font-size: 40px;
+  }
+
+  .technology_info p {
+    line-height: 1.75rem;
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -42,5 +180,96 @@
     background: url(../assets/technology/background-technology-desktop.jpg)
       no-repeat center;
     background-size: cover;
+  }
+
+  .technology_main {
+    margin-top: 4.8rem;
+    padding-bottom: 5rem;
+  }
+
+  .technology_main h1 {
+    margin: 0 0 0 9.8rem;
+    font-size: 28px;
+  }
+
+  .technology_main section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .picker_info {
+    width: 37.5rem;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .technology_picker {
+    height: 18.4rem;
+    width: auto;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .picker,
+  .picker_active {
+    height: 5rem;
+    width: 5rem;
+    font-size: 32px;
+  }
+
+  .picker:hover,
+  .picker_active:hover {
+    cursor: pointer;
+    border-color: hsl(0, 0%, 100%);
+  }
+
+  .technology_info {
+    width: 30rem;
+    padding: 0;
+    text-align: left;
+  }
+
+  .technology_info h3 {
+    margin: 0.6rem 0 0.4rem;
+    font-size: 56px;
+  }
+
+  .technology_info p {
+    line-height: 2rem;
+    font-size: 18px;
+  }
+
+  .technology_image_vehicle {
+    margin: 0;
+    height: 33rem;
+    width: 32rem;
+    background: url(../assets//technology/image-launch-vehicle-portrait.jpg)
+      no-repeat center;
+  }
+
+  .technology_image_spaceport {
+    margin: 0;
+    height: 33rem;
+    width: 32rem;
+    background: url(../assets//technology/image-spaceport-portrait.jpg)
+      no-repeat center;
+  }
+
+  .technology_image_capsule {
+    margin: 0;
+    height: 33rem;
+    width: 32rem;
+    background: url(../assets//technology/image-space-capsule-portrait.jpg)
+      no-repeat center;
+  }
+}
+
+@media (min-width: 1300px) {
+  .picker_info {
+    width: 44rem;
+    padding-left: 7rem;
   }
 }

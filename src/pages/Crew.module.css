@@ -1,15 +1,20 @@
 .crew {
   min-height: 100vh;
   width: 100%;
-  padding: 1.5rem;
   background: url(../assets/crew/background-crew-mobile.jpg) no-repeat center;
   background-size: cover;
 }
 
 .crew_main {
   margin-top: 1.5rem;
+  padding: 0 1.5rem 1.5rem;
   color: hsl(0, 0%, 100%);
   text-align: center;
+}
+
+.crew_main span {
+  color: hsla(0, 0%, 100%, 0.25);
+  font-weight: bold;
 }
 
 .crew_main h1 {
@@ -24,40 +29,38 @@
 
 .crew_image_commander {
   height: 14rem;
-  width: 20.4rem;
+  width: 100%;
   margin: 1.9rem auto 0;
+  border-bottom: 0.0625rem solid hsl(231, 15%, 26%);
   background: url(../assets/crew/image-douglas-hurley.webp) no-repeat center;
   background-size: contain;
 }
 
 .crew_image_specialist {
   height: 14rem;
-  width: 20.4rem;
+  width: 100%;
   margin: 1.9rem auto 0;
+  border-bottom: 0.0625rem solid hsl(231, 15%, 26%);
   background: url(../assets/crew/image-mark-shuttleworth.webp) no-repeat center;
   background-size: contain;
 }
 
 .crew_image_pilot {
   height: 14rem;
-  width: 20.4rem;
+  width: 100%;
   margin: 1.9rem auto 0;
+  border-bottom: 0.0625rem solid hsl(231, 15%, 26%);
   background: url(../assets/crew/image-victor-glover.webp) no-repeat center;
   background-size: contain;
 }
 
 .crew_image_engineer {
   height: 14rem;
-  width: 20.4rem;
+  width: 100%;
   margin: 1.9rem auto 0;
+  border-bottom: 0.0625rem solid hsl(231, 15%, 26%);
   background: url(../assets/crew/image-anousheh-ansari.webp) no-repeat center;
   background-size: contain;
-}
-
-.crew_line {
-  height: 0.0625rem;
-  width: 20.4rem;
-  background-color: hsl(231, 15%, 26%);
 }
 
 .crew_indicator {
@@ -140,6 +143,11 @@
     flex-direction: column-reverse;
   }
 
+  .indicator:hover,
+  .crew_indicator_active:hover {
+    cursor: pointer;
+  }
+
   .crew_main h2 {
     margin: 0 0 1rem 0;
     font-size: 24px;
@@ -163,18 +171,106 @@
   .crew_image_specialist,
   .crew_image_pilot,
   .crew_image_engineer {
-    height: 36rem;
+    height: 35rem;
     width: 28.5rem;
     margin: 0 auto;
+    border: none;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .crew {
     min-height: 100vh;
     width: 100%;
     padding: 2.5rem 0 0 3.4rem;
     background: url(../assets/crew/background-crew-desktop.jpg) no-repeat center;
     background-size: cover;
+  }
+
+  .crew_main {
+    margin-top: 0;
+    padding: 4.8rem 3rem 0 7rem;
+    text-align: left;
+  }
+
+  .crew_main section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .crew_main h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .info_indicator {
+    width: auto;
+    margin: 0;
+  }
+
+  .crew_main h2 {
+    margin: 0 0 0.6rem 0;
+    font-size: 32px;
+  }
+
+  .crew_main h3 {
+    font-size: 50px;
+  }
+
+  .crew_main p {
+    margin: 1.1rem 0 0;
+    line-height: 2rem;
+    font-size: 18px;
+  }
+
+  .crew_indicator {
+    height: 0.9rem;
+    width: 8.25rem;
+    margin: 8rem 0;
+  }
+
+  .indicator {
+    width: 0.9rem;
+  }
+
+  .crew_indicator_active {
+    width: 0.9rem;
+  }
+
+  .crew_info {
+    width: 35rem;
+  }
+
+  .crew_image_commander {
+    height: 44.5rem;
+    width: 35rem;
+    margin: 0;
+    background: url(../assets/crew/image-douglas-hurley.png) no-repeat center;
+    background-size: contain;
+  }
+
+  .crew_image_specialist {
+    height: 44.5rem;
+    width: 34rem;
+    margin: 0;
+    background: url(../assets/crew/image-mark-shuttleworth.png) no-repeat center;
+    background-size: contain;
+  }
+
+  .crew_image_pilot {
+    height: 44.5rem;
+    width: 34rem;
+    margin: 0;
+    background: url(../assets/crew/image-victor-glover.png) no-repeat center;
+    background-size: contain;
+  }
+
+  .crew_image_engineer {
+    height: 44.5rem;
+    width: 34rem;
+    margin: 0;
+    background: url(../assets/crew/image-anousheh-ansari.png) no-repeat center;
+    background-size: contain;
   }
 }

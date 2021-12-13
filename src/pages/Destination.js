@@ -69,6 +69,7 @@ const Destination = () => {
               </li>
             </ul>
           </nav>
+
           <h2>{destinations[index].name}</h2>
           <p>{destinations[index].description}</p>
 
@@ -79,6 +80,7 @@ const Destination = () => {
               <h3>Avg. Distance</h3>
               <h4>{destinations[index].distance}</h4>
             </div>
+
             <div className={classes.time}>
               <h3>Est. Travel Time</h3>
               <h4>{destinations[index].travel}</h4>
