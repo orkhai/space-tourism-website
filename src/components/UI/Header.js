@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import classes from "./Header.module.css";
 import MobileMenu from "./MobileMenu";
 
@@ -11,7 +12,9 @@ const Header = () => {
 
   return (
     <header>
-      <button className={classes.logo}></button>
+      <Link to="/">
+        <button className={classes.logo}></button>
+      </Link>
       {!isMenuOpen ? (
         <button
           onClick={toggleMobilemenu}
@@ -31,16 +34,24 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <span>00</span> Home
+            <NavLink activeClassName={classes.active} to="/" exact>
+              <span>00</span> Home
+            </NavLink>
           </li>
           <li>
-            <span>01</span> Destination
+            <NavLink activeClassName={classes.active} to="/destination">
+              <span>01</span> Destination
+            </NavLink>
           </li>
           <li>
-            <span>02</span> Crew
+            <NavLink activeClassName={classes.active} to="/crew">
+              <span>02</span> Crew
+            </NavLink>
           </li>
           <li>
-            <span>03</span> Technology
+            <NavLink activeClassName={classes.active} to="/technology">
+              <span>03</span> Technology
+            </NavLink>
           </li>
         </ul>
       </nav>

@@ -1,16 +1,27 @@
 import React, { Fragment } from "react";
-// import Home from "./components/Home";
-import Destination from "./components/Destination";
-// import Crew from "./components/Crew";
-// import Technology from "./components/Technology";
+import { Route, Switch } from "react-router-dom";
+import Home from "./pages/Home";
+import Destination from "./pages/Destination";
+import Crew from "./pages/Crew";
+import Technology from "./pages/Technology";
 
 function App() {
   return (
     <Fragment>
-      {/* <Home /> */}
-      <Destination />
-      {/* <Crew /> */}
-      {/* <Technology /> */}
+      <Switch>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/destination">
+          <Destination />
+        </Route>
+        <Route path="/crew">
+          <Crew />
+        </Route>
+        <Route path="/technology">
+          <Technology />
+        </Route>
+      </Switch>
     </Fragment>
   );
 }

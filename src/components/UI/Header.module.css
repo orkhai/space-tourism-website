@@ -74,7 +74,7 @@ header .line {
     font-family: "Barlow Condensed", sans-serif;
   }
 
-  header nav ul li:nth-of-type(2)::after {
+  a.active::after {
     content: "";
     display: block;
     width: 80%;

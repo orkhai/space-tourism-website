@@ -1,12 +1,12 @@
 import React from "react";
 import classes from "./Home.module.css";
-import Header from "./UI/Header";
+import Header from "../components/UI/Header";
 
 const Home = () => {
   return (
     <div className={classes.home}>
       <Header />
-      <main>
+      <main className={classes.home_main}>
         <div className={classes.space}>
           <h1>So, you want to travel to</h1>
           <h2>Space</h2>

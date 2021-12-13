@@ -6,12 +6,12 @@
   background-size: cover;
 }
 
-main {
+.home_main {
   margin-top: 3rem;
   text-align: center;
 }
 
-main h1 {
+.home_main h1 {
   margin: 0;
   letter-spacing: 0.17rem;
   font-size: 16px;
@@ -21,7 +21,7 @@ main h1 {
   text-transform: uppercase;
 }
 
-main h2 {
+.home_main h2 {
   margin: 2.8rem 0 1.9rem 0;
   font-size: 80px;
   color: hsl(0, 0%, 100%);
@@ -30,7 +30,7 @@ main h2 {
   text-transform: uppercase;
 }
 
-main p {
+.home_main p {
   margin: 0;
   font-size: 15px;
   line-height: 1.6rem;
@@ -84,21 +84,21 @@ main p {
     background-size: cover;
   }
 
-  main {
+  .home_main {
     margin: 0;
     padding: 6.6rem 10rem 6rem;
   }
 
-  main h1 {
+  .home_main h1 {
     font-size: 20px;
   }
 
-  main h2 {
+  .home_main h2 {
     margin: 5rem 0 1rem 0;
     font-size: 150px;
   }
 
-  main p {
+  .home_main p {
     font-size: 16px;
     line-height: 1.75rem;
   }
@@ -123,23 +123,23 @@ main p {
     background-size: cover;
   }
 
-  main {
+  .home_main {
     text-align: left;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
 
-  main h1 {
+  .home_main h1 {
     font-size: 28px;
   }
 
-  main h2 {
+  .home_main h2 {
     margin: 4.5rem 0 2rem;
     font-size: 150px;
   }
 
-  main p {
+  .home_main p {
     font-size: 18px;
     line-height: 2rem;
   }

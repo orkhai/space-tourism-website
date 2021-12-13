@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 import ReactDOM from "react-dom";
 import classes from "./MobileMenu.module.css";
 
@@ -7,16 +8,24 @@ const Menu = () => {
     <div className={classes.menu}>
       <ul>
         <li>
-          <span>00</span> Home
+          <Link to="/">
+            <span>00</span> Home
+          </Link>
         </li>
         <li>
-          <span>01</span> Destination
+          <Link to="/destination">
+            <span>01</span> Destination
+          </Link>
         </li>
         <li>
-          <span>02</span> Crew
+          <Link to="/crew">
+            <span>02</span> Crew
+          </Link>
         </li>
         <li>
-          <span>03</span> Technology
+          <Link to="/technology">
+            <span>03</span> Technology
+          </Link>
         </li>
       </ul>
     </div>
