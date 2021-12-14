@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "./Home.module.css";
 import Header from "../components/UI/Header";
 
@@ -18,9 +19,9 @@ const Home = () => {
           </p>
         </div>
 
-        <div className={classes.explore}>
-          <h3>Explore</h3>
-        </div>
+        <Link to="/destination">
+          <button className={classes.explore}>Explore</button>
+        </Link>
       </main>
     </div>
   );
